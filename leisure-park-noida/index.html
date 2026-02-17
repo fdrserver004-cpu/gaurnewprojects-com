@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="author" content="">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet">
+   <link rel="shortcut icon" href="img/favicon.png" type="image/favicon">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Gaur Projects In Noida</title>
+
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11554589192"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11554589192');
+   </script>
+
+
+
+
+   <style>
+      .form-popup-bg {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+         justify-content: center;
+      }
+
+      .form-popup-bg {
+         position: fixed;
+         left: 0;
+         top: 0;
+         height: 100%;
+         width: 100%;
+         background-color: rgba(94, 110, 141, 0.9);
+         opacity: 0;
+         visibility: hidden;
+         -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         overflow-y: auto;
+         z-index: 10000;
+      }
+
+      .form-popup-bg.is-visible {
+         opacity: 1;
+         visibility: visible;
+         -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+         -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+         transition: opacity 0.3s 0s, visibility 0s 0s;
+      }
+
+      .form-container {
+         background-color: #fdfdfd;
+         border-radius: 10px;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         max-width: 466px;
+         margin-left: auto;
+         margin-right: auto;
+         position: relative;
+         padding: 28px;
+         color: #000000;
+      }
+
+      .close-button {
+         color: #000000;
+         width: 40px;
+         height: 40px;
+         position: absolute;
+         top: 18px;
+         right: 12px;
+         border: solid 2px #000000;
+         place-content: center;
+         display: flex;
+         align-items: center;
+         z-index: 99;
+         background-color: transparent;
+      }
+
+      .form-popup-bg:before {
+         content: '';
+         background-color: #000000;
+         opacity: 0.25;
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+      }
+
+      .popup_form {
+         width: 100%;
+         padding: .375rem .75rem;
+         font-size: 1rem;
+         font-weight: 400;
+         line-height: 1.5;
+         background: none;
+         border: 1px solid #000000;
+         outline: none;
+         color: #000000 !important;
+
+      }
+
+      .form-popup-bg .form-control:focus {
+         background: none !important;
+      }
+
+      .form-popup-bg .form-control::placeholder {
+         color: #000000;
+      }
+
+      .b-user-message {
+         position: absolute;
+         left: -5000px;
+         text-indent: 100%;
+         white-space: nowrap;
+         overflow: hidden;
+      }
+   </style>
+
+
+
+
+
+</head>
+
+<body>
+
+
+   <!-- ======== gurgaon from ========= -->
+
+
+   <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+      <div class="modal-dialog form-container">
+         <div class="modal-content ">
+            <div class="modal-header header_bg_close">
+               <h5 class="modal-title" id="enquireModalLabel">Gaur Projects In Noida</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="row  align-items-center">
+
+
+
+               <div class="col-sm-12 col-sm-12">
+                  <div class="form_text">
+                     <div class="modal-body form_text">
+                        <form class="contact-form form1" method="POST">
+                           <div class=row>
+                              <div class="col-lg-12 form-group mb-2">
+                                 <input autocomplete="off" id="FIRSTNAME" name="FirstName"
+                                    class="form-control popup_form"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                              </div>
+                              <div class="col-lg-12 form-group mb-2">
+                                 <input autocomplete="off" type="email" id="EMAIL" name="EmailAddress"
+                                    class="form-control popup_form"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Email Address" pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+"
+                                    required="">
+                              </div>
+                              <div class="col-lg-12 form-group mb-2">
+                                 <input autocomplete="off" type="text" id="PHONE" name="Phone"
+                                    class="form-control popup_form" data-error="Phone is required"
+                                    placeholder="Phone/Mobile" required=""
+                                    pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                              </div>
+
+                              <input type="hidden" name="CLIENT" value="mr-Bhati">
+
+                              <div class="col-lg-12 form-group">
+                                 <div class=advanced-button>
+                                    <button class="header_phone theme_button form1-submit-btn" id="SubmitQuerytop"
+                                       type=submit>GET CALL BACK</button>
+                                    <input autocomplete="off" id="prog550688" name="mx_Project_Name" maxlength="200"
+                                       type="hidden" value="Gaur Leisure Park">
+                                    <input autocomplete=off id="LOCATION" name="mx_City" maxlength=200 type=hidden
+                                       value="Noida">
+                                    <input autocomplete=off id=TEAM name=TEAM maxlength=200 type=hidden
+                                       value="umikoindia">
+                                    <div class="form-group b-user-message">
+                                       <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                       <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                                          autocomplete="off" />
+                                        
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class=form-response></div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+   <!-- ======== gurgaon from ========= -->
+
+
+
+
+   <!-- ===========================btn sticky icon start================================== -->
+   <div class="sticky_icon">
+      <div class="social_icon">
+         <ul class="d-flex">
+            <div class="col-4">
+               <li><a href="tel:+91-9844300668">Phone</a></li>
+            </div>
+            <div class="col-4">
+               <li><a href="https://api.whatsapp.com/send?phone=+919910111300 &amp;text=Hello, Gaur Projects In Noida Get in touch with me my name is"
+                     target="_blank" class="fixed-Whatsapp">Whatsapp</a></li>
+            </div>
+            <div class="col-4 border-0">
+               <li><a style="cursor: pointer;" class="property-link"
+                     onclick="proprtyForm('Gaur Leisure Park')">Enquire</a></li>
+            </div>
+         </ul>
+      </div>
+   </div>
+
+
+
+
+
+
+
+
+
+   <!-- modal popup on restart -->
+   <div class="modal fade madal-reload" id="exampleModal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close btan_g" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body ">
+
+               <div class="row pt-2 align-items-center">
+
+               </div>
+               <div class="col-sm-12">
+                  <div class="form_modal text-center">
+                     <div class="motal_form_text pb-2">
+                        <h5 class="modal-title" id="exampleModalLabel">Gaur Projects In Noida</h5>
+
+                        <p class="mb-1 pt-2 mb-2 mt-1"><b> Type : </b>3 & 4 BHK Apartments
+                        </p>
+
+                     </div>
+                     <form class="contact-form form1" method="POST">
+                        <div class="form_sectionr row text-center justify-content-center">
+
+                           <div class="mb-3 position-relative col-lg-12">
+                              <input autocomplete="off" id="FIRSTNAME" name="FirstName" class="form-control text_form"
+                                 data-error="Name cannot contain digit or special character"
+                                 placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                              <span class="icon-inside"><i class="fas fa-user"></i></span>
+                           </div>
+                           <div class="mb-3 position-relative col-lg-12">
+                              <input autocomplete="off" type="email" id="EMAIL" name="EmailAddress"
+                                 class="form-control text_form email-address"
+                                 data-error="Name cannot contain digit or special character" placeholder="Email Address"
+                                 pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+" required="">
+                              <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                           </div>
+                           <div class="mb-3 position-relative col-lg-12">
+                              <input autocomplete="off" type="text" id="PHONE" name="Phone"
+                                 class="form-control text_form number-only" data-error="Phone is required"
+                                 placeholder="Phone/Mobile" required=""
+                                 pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                              <span class="icon-inside"><i class="fa-solid fa-phone"></i></span>
+                           </div>
+
+                           <input type="hidden" name="CLIENT" value="mr-Bhati">
+
+                           <div class="col-lg-12 form-group">
+                              <div class="advanced-button">
+                                 <button class="header_phone theme_button form1-submit-btn" id="SubmitQuerytop"
+                                    type="submit">GET
+                                    CALL BACK</button>
+                                 <input autocomplete="off" id="PROJECT" name="mx_Project_Name" maxlength="200"
+                                    type="hidden" value="Gaur Leisure Park">
+                                 <input autocomplete="off" id="LOCATION" name="mx_City" maxlength="200" type="hidden"
+                                    value="Noida">
+                                 <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                    value="umikoindia">
+                                 <div class="form-group b-user-message">
+                                    <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                    <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                                       autocomplete="off" />
+                                     
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-response"></div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+
+      </div>
+   </div>
+   <!--  -->
+
+
+
+   <!-- ==============btn scroll section start===================== -->
+   <div class="go-top"> </div>
+   <!-- =====================header sart ======================== -->
+
+   <!-- =========================header close ========================== -->
+   <header>
+      <div class="header py-lg-2 py-2 px-lg-5 px-2">
+         <div class="container-xll mx-lg-3 mx-3 header_with">
+            <div class="row align-items-center">
+               <div class="col-lg-2  text-start">
+                  <div class="logo d-flex"> <a class="logo_1" href="#"><img src="img/logo1 (14).png" alt="logo1"
+                           width="120"></a> </div>
+               </div>
+               <div class="col-lg-7">
+                  <div class="menu float-end">
+                     <ul class="d-lg-flex align-items-center">
+                        <li><a class="active hamberger" href="#">Home</a></li>
+                        <li> <a class="hamberger" href="#all_projects">Our Projects</a></li>
+                        <li> <a class="property-link btn-a btnOpenForm"
+                              onclick="proprtyForm('Gaur Leisure Park')">Schedule Site
+                              Visit</a></li>
+                        <li> <a class="hamberger" href="#amenities">Amenities</a></li>
+                        <li> <a class="hamberger" href="#contectus">Contact Us</a></li>
+                     </ul>
+                     <div class="hamberger">
+                        <div class="mobilemenu"> </div>
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="col-lg-3">
+                  <div class="contect-us float-end " style="float: right !important;">
+                     <div class="d-flex ">
+                        <ul class="d-flex me-2 align-items-center">
+                           <li class="me-3"><a href="tel:+91-9844300668"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></a>
+                           </li>
+                           <li> <a href="tel:+91-9844300668"><span>+91-9844300668</span></a> </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+
+
+
+
+            </div>
+         </div>
+      </div>
+
+   </header> <!-- =========================header close ========================== -->
+
+   <!-- =========================header close ========================== -->
+   <div class="banner_bg">
+      <div class="banner">
+         <div class="banner_img">
+            <div class="img_banner">
+               <img src="img/Gaur-City.jpg" width="100%" alt="banner_bg">
+            </div>
+
+            <div class="banner_text mx-md-3">
+               <div class="container-fluid mx-lg-5 px-lg-5">
+                  <div class="row align-items-center">
+
+                     <div class="col-lg-7 col-md-7">
+                        <div class="banner_wrapper_text">
+
+                           <h1 class="mb-1 mt-2 col-lg-8 ">Gaur Projects In Noida</h1>
+
+                           <div class="banner_highlight mt-3">
+                              <ul class="">
+
+                                 <li class="mb-3">
+                                    <h3 class=""><i class="fa-solid fa-circle-right me-3"></i>
+                                       World-class Amenities
+
+                                    </h3>
+                                 </li>
+                                 <li class="mb-3">
+                                    <h3 class=""><i class="fa-solid fa-circle-right me-3"></i>An international lifestyle
+                                       destination
+                                    </h3>
+                                 </li>
+                                 <li class="">
+                                    <h3 class=""><i class="fa-solid fa-circle-right me-3"></i>Fully Furnished Apartments
+                                    </h3>
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <!-- <h3 class="mt-1 mb-3 align-items-center fs-1"></h3> -->
+                           <div class="bgk mt-lg-5">
+                              <ul class="mt-3 d-flex align-items-center">
+
+                                 <li class="">
+                                    <h3 class="">3 & 4 BHK Apartments:</h3>
+                                    <p class="mt-lg-3 mt-2">₹ 1.66 Cr* <sub class="fs-5"> Onwards </sub></p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+
+
+
+
+
+                     <div class="col-lg-5 mb-mobile mb-mobile col-md-5 d-none d-md-block">
+
+                        <div class="Banner-form  float-end">
+                           <form class="contact-form form1" method="POST">
+                              <div class="form_section text-center">
+                                 <h3 class="form_title mb-2">Schedule A Site Visit</h3>
+                                 <div class="mb-4 position-relative">
+                                    <input autocomplete="off" id="FIRSTNAME" name="FirstName"
+                                       class="form-control text_form"
+                                       data-error="Name cannot contain digit or special character"
+                                       placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                                    <span class="icon-inside"><i class="fas fa-user"></i></span>
+                                 </div>
+                                 <div class="mb-4 position-relative">
+                                    <input autocomplete="off" type="email" id="EMAIL" name="EmailAddress"
+                                       class="form-control text_form email-address"
+                                       data-error="Name cannot contain digit or special character"
+                                       placeholder="Email Address" pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+"
+                                       required="">
+                                    <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                                 </div>
+                                 <div class="mb-4 position-relative">
+                                    <input autocomplete="off" type="text" id="PHONE" name="Phone"
+                                       class="form-control text_form number-only" data-error="Phone is required"
+                                       placeholder="Phone/Mobile" required=""
+                                       pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                                    <span class="icon-inside"><i class="fa-solid fa-phone"></i></span>
+                                 </div>
+
+                                 <input type="hidden" name="CLIENT" value="mr-Bhati">
+
+                                 <div class="col-lg-12 form-group">
+                                    <div class="advanced-button">
+                                       <button class="header_phone theme_button form1-submit-btn" id="SubmitQuerytop"
+                                          type="submit">GET
+                                          CALL BACK</button>
+                                       <input autocomplete="off" id="PROJECT" name="mx_Project_Name" maxlength="200"
+                                          type="hidden" value="Gaur Leisure Park">
+                                       <input autocomplete=" off" id="LOCATION" name="mx_City" maxlength="200"
+                                          type="hidden" value="Noida">
+                                       <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                          value="umikoindia">
+                                       <div class="form-group b-user-message">
+                                          <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                          <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1"
+                                             value="" autocomplete="off" />
+                                           
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="form-response"></div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+
+
+   </div>
+
+   <!-- banner section closed -->
+   <div class="form_bottom">
+      <div class="col-lg-4 mb-mobile col-md-5 d-block d-md-none">
+         <div class="Banner-form-mb">
+            <form class="contact-form form1" method="POST">
+               <div class="form_section">
+                  <div class="form_text text-center">
+                     <h3 class="form_title mb-3"> Schedule A Site Visit </h3>
+                     <p class="mb-4">Please fill out the form below, our expert will get back to you soon. </p>
+                  </div>
+                  <div class="mb-4 position-relative">
+                     <input autocomplete="off" id="FIRSTNAME" name="FirstName" class="form-control text_form"
+                        data-error="Name cannot contain digit or special character" placeholder="Your Full Name"
+                        pattern="[a-zA-Z ]{4,35}" required="">
+                     <span class="icon-inside"><i class="fas fa-user"></i></span>
+                  </div>
+                  <div class="mb-4 position-relative">
+                     <input autocomplete="off" type="email" id="EMAIL" name="EmailAddress"
+                        class="form-control text_form email-address"
+                        data-error="Name cannot contain digit or special character" placeholder="Email Address"
+                        pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+" required="">
+                     <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <div class="mb-4 position-relative">
+                     <input autocomplete="off" type="text" id="PHONE" name="Phone"
+                        class="form-control text_form number-only" data-error="Phone is required"
+                        placeholder="Phone/Mobile" required=""
+                        pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                     <span class="icon-inside"><i class="fa-solid fa-phone"></i></span>
+                  </div>
+
+                  <input type="hidden" name="CLIENT" value="mr-Bhati">
+
+                  <div class="col-lg-12 form-group">
+                     <div class="advanced-button">
+                        <button class="header_phone theme_button form1-submit-btn" id="SubmitQuerytop" type="submit">GET
+                           CALL BACK</button>
+                        <input autocomplete="off" id="PROJECT" name="mx_Project_Name" maxlength="200" type="hidden"
+                           value="Gaur Leisure Park">
+                        <input autocomplete=" off" id="LOCATION" name="mx_City" maxlength="200" type="hidden"
+                           value="Noida">
+                        <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                           value="umikoindia">
+                        <div class="form-group b-user-message">
+                           <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                           <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                              autocomplete="off" />  
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-response"></div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+
+
+
+   <main>
+
+      <div class="projects" id="all_projects">
+         <div class="container">
+            <div class="col-lg-12 text-center ">
+               <h2>Gaur Properties In Noida</h2>
+               <p>Find your dream home from our Premium Properties</p>
+            </div>
+            <div class="row align-items-center justify-content-center">
+
+
+               <!-- 
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/gour-yamunaex-pressway.png" width="100%" height="250" alt="">
+                     
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Gaur Yamuna Expressway</h3>
+                              <p class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At Sector
+                                 22D Yamuna Expressway</p>
+                              <h6><b class="">Type : </b>3 & 4 BHK Apartments</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 1.66 Cr* Onwards</h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">300000+ Happy Customers</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Total No. of Towers – 7 (phase 1)</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">PRE LAUNCH PRICE – ₹9,999/SQ FT</h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('Gaur Yamuna Expressway')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> -->
+
+
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/gaur-leisure.webp" width="100%" height="250" alt="">
+                        <!-- <div class="highlight_text">
+                           <p>Under Construction</p>
+                        </div> -->
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Gaur Leisure Park</h3>
+                              <p class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At Sector -
+                                 12,
+                                 Noida Extension
+                              </p>
+                              <h6><b class="">Type : </b>3/4 BHK BHK Apartments</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 2.2 Cr* Onwards</h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">King Size Residences</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Luxury Living Redefined</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Pre-Launch Price: ₹ 2.2 Cr*</h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('Gaur Leisure Park')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- 
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/Trecento-banner2.webp" width="100%" height="250" alt="">
+                  
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Gaur Trecento</h3>
+                              <p class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At Jaypee
+                                 Greens, Greater Noida
+                              </p>
+                              <h6><b class="">Type : </b>4 BHK Lavish Apartments</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ On Request*
+                              </h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Special 30:70 Payment Plan</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">With Lifetime Of Golf Membership</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">A Well-Designed Floor Plan for this iconic landmark</h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('Gaur Trecento')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> -->
+
+
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/aspireimg.png" width="100%" height="250" alt="">
+                        <!-- <div class="highlight_text">
+                           <p>Under Construction</p>
+                        </div> -->
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Aspire Centurian Park By Gaur</h3>
+                              <p class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At Tech
+                                 Zone 4, Noida Extension
+                              </p>
+                              <h6><b class="">Type : </b>3 & 4 BHK + STUDY</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ On Request*
+                              </h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Acre-12 acre approx</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Techzone 4 Noida Extension</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Pre launch price- 9375 + other charges</h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('Aspire Centurian Park By Gaur')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+               <!-- <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/Godrej Horizon.png" width="100%" height="250" alt="">
+                   
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Godrej Horizon</h3>
+                              <p class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At Dadar -
+                                 Wadala, Noida
+                              </p>
+                              <h6><b class="">Type : </b>2 & 3 BHK Apartments</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 3.09 Cr* Onwards
+                              </h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2"> Land Parcel - 5 Acres </h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2"> Floors 44 - Storeys </h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Zero Pre-EMI Applicable* </h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('Godrej Horizon')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/Platinum.png" width="100%" height="250" alt="">
+                    
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Platinum</h3>
+                              <p class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At
+                                 Vikhroli, Noida
+                              </p>
+                              <h6><b class="">Type : </b>2, 2.5, 3, 3.5 & 4 BHK Residences</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 2.63 Cr* Onwards
+                              </h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Launching 2 Towers</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">World Class Lifestyle Amenities</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Great Connectivity & Location</h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm" onclick="proprtyForm('Platinum')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/Godrej Vistas.png" width="100%" height="250" alt="">
+                 
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Godrej Vistas</h3>
+                              <p class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At
+                                 Vikhroli, Noida
+                              </p>
+                              <h6><b class="">Type : </b>2, 3 BHK Residences</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 2.63 Cr* Onwards
+                              </h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Launching 2 Towers</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">World Class Lifestyle Amenities</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Great Connectivity & Location</h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('Godrej Vistas')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-4 col-md-6 mt-5">
+                  <div class="project_box">
+                     <div class="projects_img">
+                        <img src="img/Godrej Reserve.png" width="100%" height="250" alt="">
+                   
+                        <div class="projects_text">
+                           <div class="tect">
+                              <h3>Godrej Reserve</h3>
+                              <p class="mb-2 mt-2"><span><i class="fa-solid fa-location-dot me-2"></i></span>At
+                                 Kandivali East, Noida
+                              </p>
+                              <h6><b class="">Type : </b>3 & 4 Bed Residences</h6>
+                              <h5 class="mt-3"><b class="col_color">Starting Price : </b>₹ 3.40 Cr* Onwards
+                              </h5>
+                              <ul class="my-3">
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">25:25:25:25 Payment Plans</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center mb-2">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Get Offers On Booking | Enquire Now</h4>
+                                 </li>
+                                 <li class="d-flex align-items-center">
+                                    <h4><i class="fa-regular fa-circle-check"></i></h4>
+                                    <h4 class="ms-2">Final opportunity For Palatial Living</h4>
+                                 </li>
+                              </ul>
+                              <div class="btan mt-3">
+                                 <a class="property-link btnOpenForm"
+                                    onclick="proprtyForm('Godrej Reserve')">Interested</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> -->
+
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+
+      <div class="virtual_side_bg">
+         <div class="virtual_side">
+            <div class="container">
+               <div class="virtual_text">
+
+                  <h3 class="mb-lg-3 mb-4">Gaur Properties In Noida</h3>
+                  <p class="col-lg-9">These properties are sought after for their superior lifestyle offerings and
+                     potential as high-value investments.</p>
+                  <div class="btan btnOpenForm mt-4 position-relative z-2"> <a style="cursor: pointer;"
+                        class="property-link" onclick="proprtyForm('Gaur Properties In Noida')">Enquire <i
+                           class="fa-solid fa-arrow-trend-up ms-2"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+   </main>
+
+
+   <!-- =========== amenities section start =============== -->
+
+   <div class="amenities_bg" id="amenities">
+      <div class="amenities_main">
+         <div class=" container">
+            <div class="col-lg-12 mb-5 text-center ">
+
+
+               <h2 class="mt-2">Features &amp; Amenities</h2>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 mb-4 col-md-6">
+                  <div class="amenities_box">
+                     <img src="img/amenities_1.png" width="100%" alt="">
+                     <div class="overlay_text p-2">
+                        <h4 class="">Kid's Play Area</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4 col-md-6">
+                  <div class="amenities_box">
+                     <img src="img/amenities_2.png" width="100%" alt="">
+                     <div class="overlay_text p-2">
+                        <h4 class="">Library</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4 col-md-6">
+                  <div class="amenities_box">
+                     <img src="img/amenities_3.png" width="100%" alt="">
+                     <div class="overlay_text p-2">
+                        <h4 class="">Mini Blowing Alley</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4 col-md-6">
+                  <div class="amenities_box">
+                     <img src="img/amenities_4.png" width="100%" alt="">
+                     <div class="overlay_text p-2">
+                        <h4 class="">Multipurpose Lawn</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4 col-md-6">
+                  <div class="amenities_box">
+                     <img src="img/amenities_5.png" width="100%" alt="">
+                     <div class="overlay_text p-2">
+                        <h4 class="">Multipurpose Play Court</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4 col-md-6">
+                  <div class="amenities_box">
+                     <img src="img/amenities_6.png" width="100%" alt="">
+                     <div class="overlay_text p-2">
+                        <h4 class="">Pool / Cards Room</h4>
+                     </div>
+                  </div>
+               </div>
+
+
+
+            </div>
+         </div>
+
+      </div>
+   </div>
+   <!-- =========== amenities section start =============== -->
+
+
+   <footer>
+      <div class="footer_bg" id="contectus">
+         <div class="footer">
+            <div class="container">
+               <!-- <div class="col-lg-12 text-center mb-5"> <img src="img/logo1.png" width="150" alt=""> </div> -->
+               <div class="row">
+                  <div class="col-lg-7 col-md-6 mb-5">
+                     <div class="footer_contant">
+                        <h3>About Developer</h3>
+                        <p class="mb-3 mt-3 col-lg-11">The Gaur Group is a prominent real estate developer in India,
+                           known for its high-quality residential and commercial projects. Here are some key aspects of
+                           the company.
+                        </p>
+
+                        <div class="contact_us mt-5">
+                           <ul class="d-flex align-items-center">
+                              <li><a href="tel:+91-9844300668">
+                                    <i class="fa-solid fa-phone-volume"></i></a>
+                              </li>
+                              <li class="ms-3">
+                                 <p class="pb-1">Call Us Anytime</p> <a
+                                    href="tel:+91-9844300668"><span>+91-9844300668</span></a>
+                              </li>
+                           </ul>
+
+                        </div>
+
+
+                     </div>
+                  </div>
+
+
+
+
+
+                  <div class="col-lg-5  col-md-6 mb-4">
+                     <div class="contect-form">
+                        <form class="contact-form form1" method="POST">
+                           <div class="form_section">
+                              <h3 class="form_title mb-5">Schedule A Site Visit</h3>
+                              <div class="mb-4 position-relative">
+                                 <input autocomplete="off" id="FIRSTNAME" name="FirstName"
+                                    class="form-control text_form"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                                 <span class="icon-inside"><i class="fas fa-user"></i></span>
+                              </div>
+                              <div class="mb-4 position-relative">
+                                 <input autocomplete="off" type="email" id="EMAIL" name="EmailAddress"
+                                    class="form-control text_form email-address"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Email Address" pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+"
+                                    required="">
+                                 <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                              </div>
+                              <div class="mb-4 position-relative">
+                                 <input autocomplete="off" type="text" id="PHONE" name="Phone"
+                                    class="form-control text_form number-only" data-error="Phone is required"
+                                    placeholder="Phone/Mobile" required=""
+                                    pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                                 <span class="icon-inside"><i class="fa-solid fa-phone"></i></span>
+                              </div>
+
+                              <input type="hidden" name="CLIENT" value="mr-Bhati">
+
+                              <div class="col-lg-12 form-group">
+                                 <div class="advanced-button">
+                                    <button class="header_phone theme_button form1-submit-btn" id="SubmitQuerytop"
+                                       type="submit">GET
+                                       CALL BACK</button>
+                                    <input autocomplete="off" id="PROJECT" name="mx_Project_Name" maxlength="200"
+                                       type="hidden" value="Gaur Leisure Park">
+                                    <input autocomplete=" off" id="LOCATION" name="mx_City" maxlength="200"
+                                       type="hidden" value="Noida">
+                                    <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                       value="umikoindia">
+                                    <div class="form-group b-user-message">
+                                       <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                       <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                                          autocomplete="off" />
+                                        
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form-response"></div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer_b mt-5">
+                  <div class="col-sm-12 text-center box">
+                     <p class="col-lg-11 information-web"><b> Disclaimer:</b> The content is for information purposes
+                        only and does not constitute an offer to avail of any service. Prices mentioned are subject to
+                        change without notice and properties mentioned are subject to availability. Images for
+                        representation purposes only. This website is belong to authorized marketing partner.
+                     </p>
+                     <!-- <div class="mt-4">
+
+                        <ul style="font-size: 15px; color: #000;" class="mt-2">
+                           <li>Gulf Of Goa Abhinandan Lodha : PRGO08232080 </li>
+                           <li>One Goa The Vibe: PRGO05242234 </li>
+                        </ul>
+                     </div> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bootom">
+         <ul class="footermenu">
+            <li>
+               <p style="text-align: center;"><strong><a href="disclaimer.html" target="_blank"><span
+                           style="color: #000000;">Privacy Policy</span></a>&nbsp;|&nbsp;<a href="disclaimer.html"
+                        target="_blank"><span style="color: #000000;"></span></a> Digital Media Planned
+                     by <a href="http://www.umikoweb.com/" target="_blank">Umiko Web</a> </strong> </p>
+            </li>
+         </ul>
+      </div>
+   </footer>
+
+
+
+   <!-- ===============footer section start========================== -->
+
+
+
+
+   <script src=" https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+      integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/popper/popper.min.js"></script>
+   <script src="js/bootstrap/bootstrap.min.js"></script>
+
+   <!-- Page JS Implementing Plugins (Remove the plugin script here if site does not use that feature)-->
+   <script src="js/jquery.appear.js"></script>
+   <script src="js/counter/jquery.countTo.js"></script>
+   <script src="js/select2/select2.full.js"></script>
+   <script src="js/range-slider/ion.rangeSlider.min.js"></script>
+   <script src="js/owl-carousel/owl.carousel.min.js"></script>
+   <script src="js/jarallax/jarallax.min.js"></script>
+   <script src="js/jarallax/jarallax-video.min.js"></script>
+   <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script> -->
+   <script src="js/main_js.js"></script>
+   <script src="js/custom.js"></script>
+
+
+   <script>
+      document.querySelectorAll('.form1').forEach(form => {
+         form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const btn = form.querySelector('.form1-submit-btn');
+            btn.disabled = true;
+            btn.innerText = 'Submitting...';
+
+            const formData = new FormData(form);
+
+            fetch('send_mail.php', {
+               method: 'POST',
+               body: formData
+            })
+               .then(r => r.json())
+               .then(() => {
+                  // Always redirect (even if CRM failed)
+                  window.location.href = 'thank-you.html';
+               })
+               .catch(() => {
+                  // Network / server issue → still redirect
+                  window.location.href = 'thank-you.html';
+               });
+         });
+      });
+   </script>
+
+   <script>
+      function proprtyForm(titlehoem) {
+         $('#prog550688').val(titlehoem);
+         $('#enquireModalLabel').text(titlehoem);
+         $('#enquireModal').modal('show');
+      }
+
+
+      $(document).ready(function () {
+         setTimeout(() => {
+            $('#newlaunchModal').modal('show')
+         }, 1000);
+      })
+
+
+
+
+   </script>
+
+
+</body>
+
+</html>

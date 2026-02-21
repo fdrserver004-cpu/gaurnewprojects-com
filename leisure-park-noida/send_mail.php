@@ -34,10 +34,6 @@ if (!$name || !$email || !$phone) {
 /* ================= AUTO PROJECT URL ================= */
 
 
-$projectUrl = $_SERVER['HTTP_REFERER'] ?? (
-    (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://"
-) . $_SERVER['HTTP_HOST'] . "/";
-
 
 /* ================= CRM ================= */
 

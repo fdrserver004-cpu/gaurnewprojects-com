@@ -16,7 +16,7 @@ $countryCode = trim($_POST['COUNTRYCODE'] ?? '');
 $project  = trim($_POST['mx_Project_Name'] ?? '');
 $location = trim($_POST['mx_City'] ?? '');
 $client   = trim($_POST['CLIENT'] ?? '');
-
+$domain = trim($_POST['DOMAIN'] ?? '');
 /* ===== FULL PHONE ===== */
 if ($countryCode !== '') {
     $countryCode = ltrim($countryCode, '+');
@@ -127,7 +127,7 @@ $sheetRow = [
     $geo['city'],
     $client,
     $crmSuccess ? 'SUCCESS' : 'FAILED',
-    $projectUrl
+    $domain
 ];
 
 $spreadsheetId = "1_3xJfI4wh-Zx3liNjSC3oRl157qSp99J6-fKDfuoRZ8";
